@@ -1370,11 +1370,15 @@
                 <div class="col-lg-6">
                     <div class="glass-card p-5">
                         <h4>Get Your Free Quote</h4>
-                        <form class="contact-form">
-                            <input type="text" class="form-control" placeholder="Your Name">
-                            <input type="email" class="form-control" placeholder="Your Email">
-                            <input type="tel" class="form-control" placeholder="Your Phone">
-                            <textarea class="form-control" rows="4" placeholder="Tell us about your requirements..."></textarea>
+                        <form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="c502c557-bed5-4f0a-9de0-2372c15fa6ec">
+      <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+    <input type="hidden" name="redirect" value="https://surabisystemandaccessories.com/" />
+    <input type="checkbox" name="botcheck" id="" style="display: none;" />
+                            <input type="text" class="form-control" placeholder="Your Name" name="Your Name">
+                            <input type="email" class="form-control" placeholder="Your Email" name="Your Email">
+                            <input type="tel" class="form-control" placeholder="Your Phone" name="Your Phone">
+                            <textarea class="form-control" rows="4" placeholder="Tell us about your requirements..." name="Message"></textarea>
                             <button type="submit" class="btn btn-primary w-100">Send Message</button>
                         </form>
                     </div>
