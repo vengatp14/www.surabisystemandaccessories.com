@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surabi System and Accessories</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="assets/style.css" rel="stylesheet">
+</head>
+<body>
+   <!-- Top Glass Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top glass-nav">
+        <div class="container-fluid px-3 px-md-5">
+            <a class="navbar-brand fw-semibold d-flex align-items-center" href="#hero">
+                <span class="brand-logo me-2 d-inline-flex align-items-center justify-content-center">
+                    <i class="fas fa-laptop-code"></i>
+                </span>
+                Surabi Systems
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+                <ul class="navbar-nav align-items-lg-center mb-2 mb-lg-0 gap-lg-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block ms-2">
+                        <a href="#cta" class="btn btn-modern btn-sm px-3 py-2">
+                            Get Quote
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Animated Background -->
+    <div class="bg-particles" id="particles"></div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1>Your Trusted Partner for Computers, Printers & Billing Solutions</h1>
+                    <p class="lead mb-4" style="font-size: 1.3rem; color: var(--text-secondary);">High-quality assembled systems, branded printers, billing software, and accessories — all in one place.</p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="#products" class="btn btn-modern btn-primary text-white px-4 py-3">
+                            <i class="fas fa-rocket me-2"></i>Explore Products
+                        </a>
+                        <a href="#contact" class="btn btn-modern border border-white text-white px-4 py-3">
+                            <i class="fas fa-phone me-2"></i>Contact Us
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <!--<div class="glass-card p-5 mx-auto" style="max-width: 500px;">
+                        <i class="fas fa-laptop-house fa-5x text-primary mb-4 opacity-75"></i>
+                    </div>-->
+                    <div class="col-lg-6 text-center">
+                        <div class="glass-card p-5 mx-auto hero-image-card" style="width: 1000px;">
+                            <img src="assets/img/cover.jpg" 
+                            alt="Computer and Printer Solutions"
+                            class="hero-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Surabi Systems</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="glass-card p-5">
+                        <p class="lead mb-4">Surabi System and Accessories is a one-stop destination for computers, printers, billing software, and business automation solutions.</p>
+                        <p>We provide reliable products, fast service support, and cost-effective systems for shops, offices, and enterprises.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title">Our Services & Solutions</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card service-card h-100" data-bs-toggle="modal" data-bs-target="#assembledModal">
+                        <div class="service-icon">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <h4>Assembled Computer Systems</h4>
+                        <p>High-performance custom PC builds for work and business.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card service-card h-100" data-bs-toggle="modal" data-bs-target="#printersModal">
+                        <div class="service-icon">
+                            <i class="fas fa-print"></i>
+                        </div>
+                        <h4>Printers (All Types)</h4>
+                        <p>Thermal, Laser, Inkjet, Label Printers.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card service-card h-100" data-bs-toggle="modal" data-bs-target="#scannersModal">
+                        <div class="service-icon">
+                            <i class="fas fa-expand"></i>
+                        </div>
+                        <h4>Scanners</h4>
+                        <p>Fast and accurate document scanning solutions.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card service-card h-100" data-bs-toggle="modal" data-bs-target="#billingModal">
+                        <div class="service-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <h4>Billing Software</h4>
+                        <p>Smart and user-friendly POS and billing systems.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card service-card h-100" data-bs-toggle="modal" data-bs-target="#accountingModal">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Accounting Software</h4>
+                        <p>Complete financial and business management tools.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card service-card h-100" data-bs-toggle="modal" data-bs-target="#serviceModal">
+                        <div class="service-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h4>Service & Maintenance</h4>
+                        <p>On-site and remote support for systems and printers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- assembledModal  -->
+    <div class="modal fade" id="assembledModal" tabindex="-1">
+  <div class="modal-dialog modal-md modal-dialog-centered">
+    <div class="modal-content glass-card">
+
+      <div id="assembledCarousel"
+           class="carousel slide"
+           data-bs-ride="carousel"
+           data-bs-interval="6000">
+
+        <div class="carousel-inner">
+            <button class="modal-close" data-bs-dismiss="modal">
+      &times;
+    </button>
+            <button class="modal-close" data-bs-dismiss="modal">
+      &times;
+    </button>
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <img src="assets/img/i6.jpg" class="d-block w-100">
+            <div class="carousel-caption-custom">
+              <h5 style="align-items: center; justify-content: center;">PC Specifications</h5>
+    <p style="align-items: center; justify-content: center; font-size: small;">
+      Desktop Processor - i5-6th<br>
+      Motherboard - Z310<br>
+      CPU Fan - TPCCPU4<br>
+      RAM Desktop - DDR4 8GB 2666<br>
+      SSD 2.5 SATA AX950 - 256GB<br>
+      Cabinet Myst - mATX<br>
+      SMPS N450W BG - 450W<br>
+      Monitor A20HD - 20"<br>
+      Keyboard NK2600 - USB<br>
+      Mouse N100 - USB
+    </p>
+    <a 
+  href="https://wa.me/918667874803?text=I%27m%20interested%20in%20Desktop%20Processor%20i5-6th"
+  target="_blank"
+  class="whatsapp-enquiry"
+  rel="noopener noreferrer"
+>
+  <i class="fa-solid fa-envelope"></i>
+</a>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <img src="assets/img/assem.webp" class="d-block w-100" style="height: 385px;">
+            <div class="carousel-caption-custom">
+              <h5>PC Specifications</h5>
+    <p style="align-items: center; justify-content: center; font-size: small;">
+      Desktop Processor - i3-10100 - i3-10th<br>
+      Motherboard - H510ME<br>
+      CPU Fan - MSC200<br>
+      RAM Desktop - DDR4 8GB<br>
+      SSD NVMe MN13 - 128GB<br>
+      HDD 3.5 SATA - 1TB<br>
+      Cabinet Lumi - mATX<br>
+      Monitor K202Q - 20"<br>
+      Keyboard + Mouse CHAMP - USB
+    </p>
+    <a 
+  href="https://wa.me/918667874803?text=I%27m%20interested%20in%20Desktop%20Processor%20i3-10th"
+  target="_blank"
+  class="whatsapp-enquiry"
+  rel="noopener noreferrer"
+>
+  <i class="fa-solid fa-envelope"></i>
+</a>
+            </div>
+          </div>
+
+           <!-- Slide 2 -->
+          <div class="carousel-item">
+            <img src="assets/img/i662.png" class="d-block w-100" style="height: 365px;">
+            <div class="carousel-caption-custom">
+              <h5>PC Specifications</h5>
+    <p style="align-items: center; justify-content: center; font-size: small;">
+      Desktop Processor - i5-3rd<br>
+      Motherboard - H61-M2<br>
+      CPU Fan - MSC200<br>
+      RAM Desktop - DDR3 4GB<br>
+      SSD NVMe SP128GB - 128GB<br>
+      Cabinet Amber - mATX<br>
+      SMPS N450W - 450W<br>
+      Monitor K202Q - 20"<br>
+      Keyboard NK1900 - USB<br>
+      Mouse N100 - USB
+    </p>
+    <a 
+  href="https://wa.me/918667874803?text=I%27m%20interested%20in%20Desktop%20Processor%20i5-3rd"
+  target="_blank"
+  class="whatsapp-enquiry"
+  rel="noopener noreferrer"
+>
+  <i class="fa-solid fa-envelope"></i>
+</a>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="carousel-item">
+            <img src="assets/img/i332.png" class="d-block w-100" style="height: 365px;">
+            <div class="carousel-caption-custom">
+               <h5>PC Specifications</h5>
+    <p style="align-items: center; justify-content: center; font-size: small;">
+      Desktop Processor - i3-8th<br>
+      Motherboard - Z310<br>
+      CPU Fan - QCF 1300<br>
+      RAM Desktop - DDR4 8GB 2666<br>
+      SSD 2.5 SATA AX950 - 256GB<br>
+      Cabinet Myst - mATX<br>
+      SMPS N450W BG - 450W<br>
+      Monitor A20HD - 20"<br>
+      Keyboard NK2600 - USB<br>
+      Mouse N100 - USB
+    </p>
+    <a 
+  href="https://wa.me/918667874803?text=I%27m%20interested%20in%20Desktop%20Processor%20i3-8th"
+  target="_blank"
+  class="whatsapp-enquiry"
+  rel="noopener noreferrer"
+>
+  <i class="fa-solid fa-envelope"></i>
+</a>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button"
+                data-bs-target="#assembledCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button"
+                data-bs-target="#assembledCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Printers Modal -->
+<div class="modal fade" id="printersModal" tabindex="-1">
+  <div class="modal-dialog modal-md modal-dialog-centered">
+    <div class="modal-content glass-card">
+      <div id="printersCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
+        <div class="carousel-inner">
+            <button class="modal-close" data-bs-dismiss="modal">
+      &times;
+    </button>
+            <button class="modal-close" data-bs-dismiss="modal">
+      &times;
+    </button>
+          <div class="carousel-item active">
+            <a 
+  href="https://wa.me/918667874803?text=I%27m%20interested%20in%20Thermal%20Printers"
+  target="_blank"
+  class="whatsapp-enquiry"
+  rel="noopener noreferrer"
+>
+  <i class="fa-solid fa-envelope"></i>
+</a>
+            <img src="assets/img/thermal1 (1).png" class="d-block w-100" style="height: 500px;">
+            <div class="carousel-caption-custom">
+              <h5>Thermal Printers</h5>
+              <p>High-speed thermal printers ideal for receipts, tickets, and barcodes. Perfect for retail and hospitality environments.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+             <a 
+  href="https://wa.me/918667874803?text=I%27m%20interested%20in%20Label%20Printers"
+  target="_blank"
+  class="whatsapp-enquiry"
+  rel="noopener noreferrer"
+>
+  <i class="fa-solid fa-envelope"></i>
+</a>
+            <img src="assets/img/lab.webp" class="d-block w-100" style="height: 500px;">
+            <div class="carousel-caption-custom">
+              <h5>Label Printers</h5>
+              <p>Compact label printers for shipping, product labeling, and inventory management. Supports various label sizes and materials.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+             <a 
+  href="https://wa.me/918667874803?text=I%27m%20interested%20in%20Inkjet%20Printers"
+  target="_blank"
+  class="whatsapp-enquiry"
+  rel="noopener noreferrer"
+>
+  <i class="fa-solid fa-envelope"></i>
+</a>
+            <img src="assets/img/ink.webp" class="d-block w-100" style="height: 500px;">
+            <div class="carousel-caption-custom">
+              <h5>Inkjet Printers</h5>
+              <p>Reliable inkjet printers for home and office use. Produces sharp text and vibrant color prints on a variety of media.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+             <a 
+  href="https://wa.me/918667874803?text=I%27m%20interested%20in%20Laser%20Printers"
+  target="_blank"
+  class="whatsapp-enquiry"
+  rel="noopener noreferrer"
+>
+  <i class="fa-solid fa-envelope"></i>
+</a>
+            <img src="assets/img/laser.jpg" class="d-block w-100" style="height: 500px;">
+            <div class="carousel-caption-custom">
+              <h5>Laser Printers</h5>
+              <p>Fast and efficient laser printers for high-volume printing. Ideal for professional documents and office environments.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#printersCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#printersCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Scanners Modal -->
+<div class="modal fade" id="scannersModal" tabindex="-1">
+  <div class="modal-dialog modal-md modal-dialog-centered">
+    <div class="modal-content glass-card">
+      <div id="scannersCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
+        <div class="carousel-inner">
+            <button class="modal-close" data-bs-dismiss="modal">
+      &times;
+    </button>
+          <div class="carousel-item active">
+             <a 
+  href="https://wa.me/918667874803?text=I%27m%20interested%20in%20Flatbed%20Scanners"
+  target="_blank"
+  class="whatsapp-enquiry"
+  rel="noopener noreferrer"
+>
+  <i class="fa-solid fa-envelope"></i>
+</a>
+            <img src="assets/img/flat.webp" class="d-block w-100" style="height: 500px;">
+            <div class="carousel-caption-custom">
+               <h5>Flatbed Scanners</h5>
+    <p>High-resolution flatbed scanners ideal for documents, photos, and certificates. Perfect for offices and institutions.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a 
+  href="https://wa.me/918667874803?text=I%27m%20interested%20in%20Document%20Scanners"
+  target="_blank"
+  class="whatsapp-enquiry"
+  rel="noopener noreferrer"
+>
+  <i class="fa-solid fa-envelope"></i>
+</a>
+            <img src="assets/img/doc.webp" class="d-block w-100" style="height: 500px;">
+            <div class="carousel-caption-custom">
+             <h5>Document Scanners</h5>
+    <p>Fast document scanners with automatic document feeders for bulk scanning in offices, banks, and corporate environments.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a 
+  href="https://wa.me/918667874803?text=I%27m%20interested%20in%20Portable%20Scanners"
+  target="_blank"
+  class="whatsapp-enquiry"
+  rel="noopener noreferrer"
+>
+  <i class="fa-solid fa-envelope"></i>
+</a>
+            <img src="assets/img/scan2.jpg" class="d-block w-100" style="height: 500px;">
+            <div class="carousel-caption-custom">
+              <h5>Portable Scanners</h5>
+    <p>Lightweight and compact scanners designed for on-the-go scanning. Ideal for field work and mobile professionals.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a 
+  href="https://wa.me/918667874803?text=I%27m%20interested%20in%20Barcode%20Scanners"
+  target="_blank"
+  class="whatsapp-enquiry"
+  rel="noopener noreferrer"
+>
+  <i class="fa-solid fa-envelope"></i>
+</a>
+            <img src="assets/img/scan1.webp" class="d-block w-100" style="height: 500px;">
+            <div class="carousel-caption-custom">
+              <h5>Barcode Scanners</h5>
+    <p>Efficient barcode scanners for inventory management, billing counters, and retail environments with high accuracy.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#scannersCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#scannersCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Billing Software Modal -->
+<div class="modal fade" id="billingModal" tabindex="-1">
+  <div class="modal-dialog modal-md modal-dialog-centered">
+    <div class="modal-content glass-card">
+      <div id="billingCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
+        <div class="carousel-inner">
+            <button class="modal-close" data-bs-dismiss="modal">
+      &times;
+    </button>
+          <div class="carousel-item active">
+            <a 
+  href="https://wa.me/918667874803?text=I%27m%20interested%20in%20Retail%20Billing%20Software"
+  target="_blank"
+  class="whatsapp-enquiry"
+  rel="noopener noreferrer"
+>
+  <i class="fa-solid fa-envelope"></i>
+</a>
+            <img src="assets/img/retail.png" class="d-block w-100" style="height: 500px;">
+            <div class="carousel-caption-custom">
+              <h5>Retail Billing Software</h5>
+    <p>Easy-to-use billing software for retail shops with GST support, barcode billing, inventory tracking, and quick invoicing.</p>
+            </div>
+          </div>
+          <!-- <div class="carousel-item">
+             <a 
+  href="https://wa.me/918667874803?text=I%27m%20interested%20in%20POS%20Billing%20Systems"
+  target="_blank"
+  class="whatsapp-enquiry"
+  rel="noopener noreferrer"
+>
+  <i class="fa-solid fa-envelope"></i>
+</a>
+            <img src="assets/img/pos.jpg" class="d-block w-100" style="height: 500px;">
+            <div class="carousel-caption-custom">
+              <h5>POS Billing Systems</h5>
+    <p>Advanced POS systems for supermarkets, restaurants, and showrooms with fast billing, reports, and multi-payment options.</p>
+            </div>
+          </div> -->
+          <div class="carousel-item">
+             <a 
+  href="https://wa.me/918667874803?text=I%27m%20interested%20in%20GST%20Billing%20Software"
+  target="_blank"
+  class="whatsapp-enquiry"
+  rel="noopener noreferrer"
+>
+  <i class="fa-solid fa-envelope"></i>
+</a>
+            <img src="assets/img/gst1.png" class="d-block w-100" style="height: 500px;">
+            <div class="carousel-caption-custom">
+              <h5>GST Billing Software</h5>
+    <p>Compliant GST billing solutions with tax calculation, invoice generation, returns support, and customer management.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+             <a 
+  href="https://wa.me/918667874803?text=I%27m%20interested%20in%20Customized%20Billing%20Solutions"
+  target="_blank"
+  class="whatsapp-enquiry"
+  rel="noopener noreferrer"
+>
+  <i class="fa-solid fa-envelope"></i>
+</a>
+            <img src="assets/img/customized.webp" class="d-block w-100" style="height: 500px;">
+            <div class="carousel-caption-custom">
+              <h5>Customized Billing Solutions</h5>
+    <p>Tailor-made billing software designed to match your business workflow, industry needs, and reporting requirements.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#billingCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#billingCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Accounting Software Modal -->
+<div class="modal fade" id="accountingModal" tabindex="-1">
+  <div class="modal-dialog modal-md modal-dialog-centered">
+    <div class="modal-content glass-card">
+      <div id="accountingCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
+        <div class="carousel-inner">
+            <button class="modal-close" data-bs-dismiss="modal">
+      &times;
+    </button>
+          <div class="carousel-item active">
+             <a 
+  href="https://wa.me/918667874803?text=I%27m%20interested%20in%20Business%20Accounting%20Software"
+  target="_blank"
+  class="whatsapp-enquiry"
+  rel="noopener noreferrer"
+>
+  <i class="fa-solid fa-envelope"></i>
+</a>
+            <img src="assets/img/busac (2).png" class="d-block w-100" style="height: 500px;">
+            <div class="carousel-caption-custom">
+               <h5>Business Accounting Software</h5>
+    <p>Complete accounting solutions for businesses to manage income, expenses, ledgers, and financial reports accurately.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a 
+  href="https://wa.me/918667874803?text=I%27m%20interested%20in%20GST%20Accounting%20Solutions"
+  target="_blank"
+  class="whatsapp-enquiry"
+  rel="noopener noreferrer"
+>
+  <i class="fa-solid fa-envelope"></i>
+</a>
+            <img src="assets/img/gstac.jpg" class="d-block w-100" style="height: 500px;">
+            <div class="carousel-caption-custom">
+              <h5>GST Accounting Solutions</h5>
+    <p>GST-enabled accounting software with tax calculations, filing support, purchase & sales tracking, and compliance reports.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a 
+  href="https://wa.me/918667874803?text=I%27m%20interested%20in%20Inventory%20&%20Account%20Management"
+  target="_blank"
+  class="whatsapp-enquiry"
+  rel="noopener noreferrer"
+>
+  <i class="fa-solid fa-envelope"></i>
+</a>
+            <img src="assets/img/iven.png" class="d-block w-100" style="height: 500px;">
+            <div class="carousel-caption-custom">
+              <h5>Inventory & Accounts Management</h5>
+    <p>Integrated inventory and accounting systems to track stock levels, valuations, and real-time financial performance.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+             <a 
+  href="https://wa.me/918667874803?text=I%27m%20interested%20in%20Payroll%20&%20Financial%20Reports"
+  target="_blank"
+  class="whatsapp-enquiry"
+  rel="noopener noreferrer"
+>
+  <i class="fa-solid fa-envelope"></i>
+</a>
+            <img src="assets/img/pay.webp" class="d-block w-100" style="height: 500px;">
+            <div class="carousel-caption-custom">
+              <h5>Payroll & Financial Reports</h5>
+    <p>Payroll management with salary processing, statutory compliance, and detailed financial reports for better decisions.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#accountingCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#accountingCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Service & Maintenance Modal -->
+<div class="modal fade" id="serviceModal" tabindex="-1">
+  <div class="modal-dialog modal-md modal-dialog-centered">
+    <div class="modal-content glass-card">
+      <div id="serviceCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
+        <div class="carousel-inner">
+            <button class="modal-close" data-bs-dismiss="modal">
+      &times;
+    </button>
+          <div class="carousel-item active">
+             <a 
+  href="https://wa.me/918667874803?text=I%27m%20interested%20in%20Desktop%20Assembling"
+  target="_blank"
+  class="whatsapp-enquiry"
+  rel="noopener noreferrer"
+>
+  <i class="fa-solid fa-envelope"></i>
+</a>
+            <img src="assets/img/assrep (2).png" class="d-block w-100" style="height: 500px;">
+            <div class="carousel-caption-custom">
+              <h5>Desktop Assembling</h5>
+    <p>Custom-built desktop systems designed for office, business, and personal use with high-quality and reliable components.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+             <a 
+  href="https://wa.me/918667874803?text=I%27m%20interested%20in%20Desktop%20Repair%20&%20Troubleshooting"
+  target="_blank"
+  class="whatsapp-enquiry"
+  rel="noopener noreferrer"
+>
+  <i class="fa-solid fa-envelope"></i>
+</a>
+            <img src="assets/img/rep1.png" class="d-block w-100" style="height: 500px;">
+            <div class="carousel-caption-custom">
+              <h5>Desktop Repair & Troubleshooting</h5>
+    <p>Expert repair services for desktops including hardware faults, software issues, and performance-related problems.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+             <a 
+  href="https://wa.me/918667874803?text=I%27m%20interested%20in%20Desktop%20Upgrades%20&%20Optimization"
+  target="_blank"
+  class="whatsapp-enquiry"
+  rel="noopener noreferrer"
+>
+  <i class="fa-solid fa-envelope"></i>
+</a>
+            <img src="assets/img/opti.jpg" class="d-block w-100" style="height: 500px;">
+            <div class="carousel-caption-custom">
+               <h5>Desktop Upgrades & Optimization</h5>
+    <p>Upgrade desktops with SSDs, RAM, processors, and graphics components to improve speed and overall performance.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+             <a 
+  href="https://wa.me/918667874803?text=I%27m%20interested%20in%20Desktop%20AMC%20&%20Maintenance"
+  target="_blank"
+  class="whatsapp-enquiry"
+  rel="noopener noreferrer"
+>
+  <i class="fa-solid fa-envelope"></i>
+</a>
+            <img src="assets/img/amc (2).png" class="d-block w-100">
+            <div class="carousel-caption-custom">
+              <h5>Desktop AMC & Maintenance</h5>
+    <p>Annual Maintenance Contracts for desktops including regular servicing, on-site support, and preventive care.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#serviceCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#serviceCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Vision Mission Section -->
+    <section id="vision" class="section" style="background: rgba(0,0,0,0.3);">
+        <div class="container">
+            <h2 class="section-title">Our Vision & Mission</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="glass-card p-4 text-center h-100">
+                        <h4><i class="fas fa-eye text-primary me-2"></i>Vision</h4>
+                        <p>To deliver reliable and affordable technology solutions that help businesses run smoothly.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="glass-card p-4 text-center h-100">
+                        <h4><i class="fas fa-bullseye text-success me-2"></i>Mission</h4>
+                        <p>To provide quality products, quick service support, and customer-focused solutions for every business need.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="glass-card p-4 text-center h-100" style="border: 2px solid rgba(var(--primary-rgb), 0.5);">
+                        <h4 style="color: rgba(var(--primary-rgb), 1);"><i class="fas fa-quote-left me-2"></i>Motto</h4>
+                        <p class="fs-5 fw-bold">"Right Product • Right Price • Right Support."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section">
+  <div class="container">
+    <h2 class="section-title">Our Key Products</h2>
+
+    <div class="product-grid">
+
+      <div class="glass-card p-4 text-center" data-bs-toggle="modal" data-bs-target="#assembleProduct">
+        <i class="fas fa-laptop fa-3x text-accent mb-3"></i>
+        <h5>Assembled Systems</h5>
+      </div>
+
+      <div class="glass-card p-4 text-center" data-bs-toggle="modal" data-bs-target="#thermalProduct">
+        <i class="fas fa-fire fa-3x text-danger mb-3"></i>
+        <h5>Thermal Printers</h5>
+      </div>
+
+      <div class="glass-card p-4 text-center" data-bs-toggle="modal" data-bs-target="#laserProduct">
+        <i class="fa-solid fa-print fa-3x text-warning mb-3"></i>
+        <h5>Laser Printers</h5>
+      </div>
+
+      <div class="glass-card p-4 text-center" data-bs-toggle="modal" data-bs-target="#inkjetProduct">
+        <i class="fas fa-droplet fa-3x text-accent mb-3"></i>
+        <h5>Inkjet Printers</h5>
+      </div>
+
+      <div class="glass-card p-4 text-center" data-bs-toggle="modal" data-bs-target="#labelProduct">
+        <i class="fas fa-tags fa-3x text-warning mb-3"></i>
+        <h5>Label Printers</h5>
+      </div>
+
+      <div class="glass-card p-4 text-center" data-bs-toggle="modal" data-bs-target="#barcodeProduct">
+        <i class="fas fa-barcode fa-3x text-info mb-3"></i>
+        <h5>Barcode Scanners</h5>
+      </div>
+
+      <div class="glass-card p-4 text-center" data-bs-toggle="modal" data-bs-target="#billingsMachine">
+        <i class="fas fa-cash-register fa-3x text-danger mb-3"></i>
+        <h5>Billing Machines</h5>
+      </div>
+
+      <div class="glass-card p-4 text-center" data-bs-toggle="modal" data-bs-target="#posProduct">
+        <i class="fas fa-store fa-3x text-warning mb-3"></i>
+        <h5>POS Systems</h5>
+      </div>
+
+      <div class="glass-card p-4 text-center" data-bs-toggle="modal" data-bs-target="#softwareProduct">
+        <i class="fas fa-file-invoice-dollar fa-3x text-accent mb-3"></i>
+        <h5>Billing & Accounting Software</h5>
+      </div>
+
+      <div class="glass-card p-4 text-center" data-bs-toggle="modal" data-bs-target="#accessoriesProduct">
+        <i class="fas fa-plug fa-3x text-accent mb-3"></i>
+        <h5>Accessories</h5>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Assembled Systems -->
+<div class="modal fade" id="assembleProduct" tabindex="-1">
+  <div class="modal-dialog modal-md modal-dialog-centered">
+    <div class="modal-content glass-card">
+      <div id="assembleCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <button class="modal-close" data-bs-dismiss="modal">
+      &times;
+    </button>
+          <div class="carousel-item active"><img src="assets/img/i66.png" class="d-block w-100" style="height:500px;"></div>
+          <div class="carousel-item"><img src="assets/img/assem.webp" class="d-block w-100" style="height:500px;"></div>
+          <div class="carousel-item"><img src="assets/img/i62.webp" class="d-block w-100" style="height:500px;"></div>
+          <div class="carousel-item"><img src="assets/img/i32.webp" class="d-block w-100" style="height:500px;"></div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#assembleCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#assembleCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Thermal Printers -->
+<div class="modal fade" id="thermalProduct" tabindex="-1">
+  <div class="modal-dialog modal-md modal-dialog-centered">
+    <div class="modal-content glass-card">
+      <div id="thermalCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <button class="modal-close" data-bs-dismiss="modal">
+      &times;
+    </button>
+          <div class="carousel-item active"><img src="assets/img/thermal1 (1).png" class="d-block w-100" style="height:500px;"></div>
+          <div class="carousel-item"><img src="assets/img/ther.jpg" class="d-block w-100" style="height:500px;"></div>
+          <div class="carousel-item"><img src="assets/img/ther1.png" class="d-block w-100" style="height:500px;"></div>
+          <div class="carousel-item"><img src="assets/img/ther3.webp" class="d-block w-100" style="height:500px;"></div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#thermalCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+        <button class="carousel-control-next" type="button" data-bs-target="#thermalCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Laser Printers -->
+<div class="modal fade" id="laserProduct" tabindex="-1">
+  <div class="modal-dialog modal-md modal-dialog-centered">
+    <div class="modal-content glass-card">
+      <div id="laserCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <button class="modal-close" data-bs-dismiss="modal">
+      &times;
+    </button>
+          <div class="carousel-item active"><img src="assets/img/las11.png" class="d-block w-100" style="height:500px;"></div>
+          <div class="carousel-item"><img src="assets/img/las21.png" class="d-block w-100" style="height:500px;"></div>
+          <!-- <div class="carousel-item"><img src="assets/img/las3.webp" class="d-block w-100" style="height:500px;"></div> -->
+          <div class="carousel-item"><img src="assets/img/laser4.jpg" class="d-block w-100" style="height:500px;"></div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#laserCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+        <button class="carousel-control-next" type="button" data-bs-target="#laserCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Inkjet Printers -->
+<div class="modal fade" id="inkjetProduct" tabindex="-1">
+  <div class="modal-dialog modal-md modal-dialog-centered">
+    <div class="modal-content glass-card">
+      <div id="inkjetCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <button class="modal-close" data-bs-dismiss="modal">
+      &times;
+    </button>
+          <div class="carousel-item active"><img src="assets/img/ink11.png" class="d-block w-100" style="height:500px;"></div>
+          <div class="carousel-item"><img src="assets/img/ink22.png" class="d-block w-100" style="height:500px;"></div>
+          <div class="carousel-item"><img src="assets/img/ink1.png" class="d-block w-100" style="height:500px;"></div>
+          <!-- <div class="carousel-item"><img src="assets/img/ink3.webp" class="d-block w-100" style="height:500px;"></div> -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#inkjetCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+        <button class="carousel-control-next" type="button" data-bs-target="#inkjetCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Label Printers -->
+<div class="modal fade" id="labelProduct" tabindex="-1">
+  <div class="modal-dialog modal-md modal-dialog-centered">
+    <div class="modal-content glass-card">
+      <div id="labelCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <button class="modal-close" data-bs-dismiss="modal">
+      &times;
+    </button>
+          <div class="carousel-item active"><img src="assets/img/label11.png" class="d-block w-100" style="height:500px;"></div>
+          <div class="carousel-item"><img src="assets/img/lab.webp" class="d-block w-100" style="height:500px;"></div>
+          <div class="carousel-item"><img src="assets/img/label1.png" class="d-block w-100" style="height:500px;"></div>
+          <div class="carousel-item"><img src="assets/img/lab2.jfif" class="d-block w-100" style="height:500px;"></div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#labelCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+        <button class="carousel-control-next" type="button" data-bs-target="#labelCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Barcode Scanners -->
+<div class="modal fade" id="barcodeProduct" tabindex="-1">
+  <div class="modal-dialog modal-md modal-dialog-centered">
+    <div class="modal-content glass-card">
+      <div id="barcodeCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <button class="modal-close" data-bs-dismiss="modal">
+      &times;
+    </button>
+          <div class="carousel-item active"><img src="assets/img/scanner.webp" class="d-block w-100" style="height:500px;"></div>
+          <!-- <div class="carousel-item"><img src="assets/img/scanner.webp" class="d-block w-100" style="height:500px;"></div> -->
+          <div class="carousel-item"><img src="assets/img/scan2.jpg" class="d-block w-100" style="height:500px;"></div>
+          <div class="carousel-item"><img src="assets/img/gun.jpeg" class="d-block w-100" style="height:500px;"></div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#barcodeCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+        <button class="carousel-control-next" type="button" data-bs-target="#barcodeCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Billing Machines -->
+<div class="modal fade" id="billingsMachine" tabindex="-1">
+  <div class="modal-dialog modal-md modal-dialog-centered">
+    <div class="modal-content glass-card">
+      <div id="billingsCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <button class="modal-close" data-bs-dismiss="modal">
+      &times;
+    </button>
+          <div class="carousel-item active"><img src="assets/img/biller.png" class="d-block w-100" style="height:500px;"></div>
+          <div class="carousel-item"><img src="assets/img/bill (2).png" class="d-block w-100" style="height:500px;"></div>
+          <div class="carousel-item"><img src="assets/img/bill.png" class="d-block w-100" style="height:500px;"></div>
+          <!-- <div class="carousel-item"><img src="assets/img/bill4.png" class="d-block w-100" style="height:500px;"></div> -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#billingsCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+        <button class="carousel-control-next" type="button" data-bs-target="#billingsCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- POS Systems -->
+<div class="modal fade" id="posProduct" tabindex="-1">
+  <div class="modal-dialog modal-md modal-dialog-centered">
+    <div class="modal-content glass-card">
+      <div id="posCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <button class="modal-close" data-bs-dismiss="modal">
+      &times;
+    </button>
+          <div class="carousel-item active"><img src="assets/img/pos1.png" class="d-block w-100" style="height:500px;"></div>
+          <div class="carousel-item"><img src="assets/img/pos2.png" class="d-block w-100" style="height:500px;"></div>
+          <div class="carousel-item"><img src="assets/img/pos3.png" class="d-block w-100" style="height:500px;"></div>
+          <!-- <div class="carousel-item"><img src="assets/img/pos4.jpg" class="d-block w-100" style="height:500px;"></div> -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#posCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+        <button class="carousel-control-next" type="button" data-bs-target="#posCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Software -->
+<div class="modal fade" id="softwareProduct" tabindex="-1">
+  <div class="modal-dialog modal-md modal-dialog-centered">
+    <div class="modal-content glass-card">
+      <div id="softwareCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <button class="modal-close" data-bs-dismiss="modal">
+      &times;
+    </button>
+          <div class="carousel-item active"><img src="assets/img/busac (2).png" class="d-block w-100" style="height:500px;"></div>
+          <div class="carousel-item"><img src="assets/img/customized.webp" class="d-block w-100" style="height:500px;"></div>
+          <div class="carousel-item"><img src="assets/img/opti.jpg" class="d-block w-100" style="height:500px;"></div>
+          <!-- <div class="carousel-item"><img src="assets/img/software4.jpg" class="d-block w-100" style="height:500px;"></div> -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#softwareCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+        <button class="carousel-control-next" type="button" data-bs-target="#softwareCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Accessories -->
+<div class="modal fade" id="accessoriesProduct" tabindex="-1">
+  <div class="modal-dialog modal-md modal-dialog-centered">
+    <div class="modal-content glass-card">
+      <div id="accessoriesCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <button class="modal-close" data-bs-dismiss="modal">
+      &times;
+    </button>
+          <div class="carousel-item active"><img src="assets/img/asPC.jpg" class="d-block w-100" style="height:500px;"></div>
+          <div class="carousel-item"><img src="assets/img/pcas.jpg" class="d-block w-100" style="height:500px;"></div>
+          <div class="carousel-item"><img src="assets/img/cpuas.webp" class="d-block w-100" style="height:500px;"></div>
+          <div class="carousel-item"><img src="assets/img/cpas.avif" class="d-block w-100" style="height:500px;"></div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#accessoriesCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+        <button class="carousel-control-next" type="button" data-bs-target="#accessoriesCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Why Choose Us -->
+    <section id="why-us" class="section" style="background: rgba(0,0,0,0.3);">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div>
+                                    <h5>Quality Assured Products</h5>
+                                    <p>Only trusted and tested systems & printers.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-dollar-sign"></i>
+                                </div>
+                                <div>
+                                    <h5>Affordable Pricing</h5>
+                                    <p>Best solutions within your budget.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-bolt"></i>
+                                </div>
+                                <div>
+                                    <h5>Quick Service Support</h5>
+                                    <p>Fast response and dedicated assistance.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-store"></i>
+                                </div>
+                                <div>
+                                    <h5>Trusted by Many Businesses</h5>
+                                    <p>Retail shops, offices, and enterprises.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="section">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="glass-card review-card p-4">
+                        <div class="stars mb-3">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p>"Excellent service and fast delivery. The assembled system works perfectly!"</p>
+                        <div class="d-flex align-items-center">
+                            <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <strong>Karthik R.</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="glass-card review-card p-4">
+                        <div class="stars mb-3">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p>"Best place for printers and billing software. Very supportive team."</p>
+                        <div class="d-flex align-items-center">
+                            <div class="bg-success rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <strong>Priya S.</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="glass-card review-card p-4">
+                        <div class="stars mb-3">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p>"Affordable pricing and genuine products. Highly recommended."</p>
+                        <div class="d-flex align-items-center">
+                            <div class="bg-warning rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 50px; height: 50px;">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <strong>Rajesh Kumar</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+<section id="gallery" class="section">
+  <div class="container">
+    <h2 class="section-title">Gallery</h2>
+
+    <div class="row g-4 gallery-grid">
+      <!-- Item 1 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="glass-card gallery-card">
+          <img src="assets/img/biller.jpg" alt="Gallery Image 1">
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="glass-card gallery-card">
+          <img src="assets/img/printer.jpg" alt="Gallery Image 2">
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="glass-card gallery-card">
+          <img src="assets/img/cpu.webp" alt="Gallery Image 3">
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="glass-card gallery-card">
+          <img src="assets/img/scanner.webp" alt="Gallery Image 4">
+        </div>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="glass-card gallery-card">
+          <img src="assets/img/assem.webp" alt="Gallery Image 5">
+        </div>
+      </div>
+
+      <!-- Item 6 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="glass-card gallery-card">
+          <img src="assets/img/gun.jpeg" alt="Gallery Image 6">
+        </div>
+      </div>
+
+      <!-- Item 7 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="glass-card gallery-card">
+          <img src="assets/img/prin.jpeg" alt="Gallery Image 7">
+        </div>
+      </div>
+
+      <!-- Item 8 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="glass-card gallery-card">
+          <img src="assets/img/system.jpeg" alt="Gallery Image 8">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Client Logos -->
+    <section id="clients" class="section" style="background: rgba(0,0,0,0.3);">
+        <div class="container">
+            <h2 class="section-title">Trusted by Businesses Across Tamil Nadu</h2>
+            <div class="logo-grid">
+                <div class="logo-placeholder">Dell</div>
+                <div class="logo-placeholder">EPSON</div>
+                <div class="logo-placeholder">Acer</div>
+                <div class="logo-placeholder">Asus</div>
+                <div class="logo-placeholder">Lenovo</div>
+                <div class="logo-placeholder">Dell</div>
+                <div class="logo-placeholder">HP</div>
+                <div class="logo-placeholder">Zebronics</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Do you provide warranty for systems and printers?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, all products come with standard manufacturer or service warranty.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Do you offer on-site support?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, on-site support is available for printers, systems, and software installation.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Can I get customized PC builds?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Absolutely! We assemble systems based on your performance and budget needs.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Do you provide billing software training?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we provide installation, setup, and user training.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Do you deliver products to shops and offices?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, delivery and setup are available locally.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="section text-center" style="background: linear-gradient(135deg, rgba(var(--primary-rgb), 0.2), rgba(var(--secondary-rgb), 0.2));">
+        <div class="container">
+            <h2 class="section-title mb-4">Ready to Upgrade Your Business?</h2>
+            <p class="lead mb-5">Get the best systems, printers, and software solutions for your shop or office.</p>
+            <a href="#contact" class="btn btn-modern btn-primary text-white px-5 py-4 fs-4">
+                <i class="fas fa-quote-left me-2"></i>Get a Free Quote
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <div class="glass-card p-5 h-100">
+                        <div class="mt-4">
+                            <h5><i class="fa-solid fa-user text-danger me-2"></i>Proprietor</h5>
+                            <p>Vani Sri</p>
+                        </div>
+
+                        <h4><i class="fas fa-map-marker-alt text-warning me-2"></i>Address</h4>
+                        <p>Surabi System and Accessories<br>33, Gandhiji Street, Alagappan Nagar, Madurai - 625003</p>
+                        
+                        <div class="mt-4">
+                            <h5><i class="fas fa-phone text-success me-2"></i>Phone</h5>
+                            <p>8667874803</p>
+                        </div>
+                        
+                        <div class="mt-4">
+                            <h5><i class="fas fa-envelope text-warning me-2"></i>Email</h5>
+                            <p>[Your email]</p>
+                        </div>
+                        
+                        <div class="mt-4">
+                            <h5><i class="fab fa-whatsapp text-success me-2"></i>WhatsApp</h5>
+                            <p>8667874803</p>
+                        </div>
+                        
+                        <div class="mt-4">
+                            <h5><i class="fas fa-clock text-info me-2"></i>Office Hours</h5>
+                            <p>Mon – Sat: 10:00 AM to 8:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="glass-card p-5">
+                        <h4>Get Your Free Quote</h4>
+                        <form class="contact-form">
+                            <input type="text" class="form-control" placeholder="Your Name">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                            <input type="tel" class="form-control" placeholder="Your Phone">
+                            <textarea class="form-control" rows="4" placeholder="Tell us about your requirements..."></textarea>
+                            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Google Maps Placeholder -->
+            <div class="glass-card mt-5 p-0 overflow-hidden" style="height: 400px; border-radius: 24px;">
+                <div class="text-center">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3930.3418382232826!2d78.10523527502994!3d9.905460990195158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOcKwNTQnMTkuNyJOIDc4wrAwNicyOC4xIkU!5e0!3m2!1sen!2sin!4v1767586505074!5m2!1sen!2sin" width="1300" height="500" style="border:0; margin-top: 0%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Floating Button -->
+<a href="https://wa.me/918667874803" target="_blank" class="whatsapp-float">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Call Floating Button -->
+<a href="tel:+918667874803" class="float-btn call-float">
+  <i class="fas fa-phone"></i>
+</a>
+
+
+    <!-- Mobile Bottom Navigation -->
+    <nav class="mobile-nav">
+        <div class="container">
+            <div class="d-flex justify-content-around">
+                <a href="#hero" class="nav-item active">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#services" class="nav-item">
+                    <i class="fas fa-cogs"></i>
+                    <span>Services</span>
+                </a>
+                <a href="#products" class="nav-item">
+                    <i class="fas fa-box"></i>
+                    <span>Products</span>
+                </a>
+                <a href="#contact" class="nav-item">
+                    <i class="fas fa-headset"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+  
+      <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container py-4 py-md-5">
+            <div class="row gy-4 align-items-center">
+                <div class="col-md-4 text-center text-md-start">
+                    <h5 class="mb-2">Surabi System and Accessories</h5>
+                    <p class="mb-1 small text-footer">
+                        Your trusted partner for computers, printers & billing solutions.
+                    </p>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <div class="footer-links d-flex justify-content-center gap-3 small">
+                        <a href="#about">About</a>
+                        <a href="#services">Services</a>
+                        <a href="#products">Products</a>
+                        <a href="#faq">FAQ</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center text-md-end">
+                    <div class="footer-social d-inline-flex gap-3">
+                        <a href="#" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="footer-divider my-4">
+
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center small text-footer">
+                <span>© <span id="year"></span> Surabi System and Accessories. All rights reserved.</span>
+                <div class="d-flex gap-3 mt-2 mt-md-0">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/main.js"></script>
+</body>
+</html>
